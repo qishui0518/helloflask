@@ -34,6 +34,7 @@ movies = [
 
 @app.route('/watchlist')
 def watchlist():
+
     return render_template('watchlist.html', user=user, movies=movies)
 
 

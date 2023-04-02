@@ -23,6 +23,7 @@ app.secret_key = os.getenv('SECRET_KEY', 'secret string')
 @app.route('/')
 @app.route('/hello')
 def hello():
+    
     name = request.args.get('name')
     if name is None:
         name = request.cookies.get('name', 'Human')
